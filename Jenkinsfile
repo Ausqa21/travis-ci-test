@@ -18,6 +18,7 @@ pipeline {
     stage("test") {
       steps {
         echo 'testing the app...'
+        sh 'pwd'
         echo "steadily testing..."
       }
     }
