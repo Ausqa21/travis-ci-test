@@ -10,8 +10,8 @@ pipeline {
     stage("build") {
       steps {
         echo 'building the app...'
-        echo "app built successfully"
         sh 'mvn package'
+        echo "app built successfully"
       }
     }
     
